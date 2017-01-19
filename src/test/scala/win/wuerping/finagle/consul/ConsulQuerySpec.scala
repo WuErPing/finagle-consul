@@ -1,4 +1,4 @@
-package gov.nih.nlm.ncbi.finagle.consul
+package win.wuerping.finagle.consul
 
 import org.scalatest.{BeforeAndAfterAll, Matchers, WordSpecLike}
 

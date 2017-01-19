@@ -1,4 +1,4 @@
-package gov.nih.nlm.ncbi.finagle.consul.catalog
+package win.wuerping.finagle.consul.catalog
 
 import java.net.InetSocketAddress
 import java.util.concurrent.TimeUnit
@@ -8,9 +8,10 @@ import com.twitter.finagle.util.DefaultTimer
 import com.twitter.finagle.{Addr, Address, Resolver}
 import com.twitter.logging.Logger
 import com.twitter.util._
-import gov.nih.nlm.ncbi.finagle.consul.{ConsulHttpClientFactory, ConsulQuery}
+import win.wuerping.finagle.consul.{ConsulHttpClientFactory, ConsulQuery}
 import org.json4s._
 import org.json4s.jackson.JsonMethods._
+import win.wuerping.finagle.consul.ConsulHttpClientFactory
 
 /**
  * A finagle Resolver for services registered in the consul catalog

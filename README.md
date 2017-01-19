@@ -1,5 +1,22 @@
 ## Finagle Consul
 
+### change log
+#### 0.1.1-SNAPSHOT
+- Use NullTracer instead of DefaultTracer solve issues below : 
+```
+D 0119 08:47:03.138 THREAD54: ChannelStatsHandler caught an exception
+java.net.ConnectException: Connection refused: no further information: localhost/127.0.0.1:1463
+```
+- exec demo
+```
+cd demo
+mvn compile
+mvn exec:java -Dexec.mainClass=win.wuerping.finagle.consul.demo.EchoServer
+mvn exec:java -Dexec.mainClass=win.wuerping.finagle.consul.demo.EchoPinger
+```
+
+--- 
+
 Service discovery for Finagle cluster with Consul. This project was originally
 developed by
 [kachayev/finagle-consul](https://github.com/kachayev/finagle-consul), [dmexe/finagle-consul](https://github.com/dmexe/finagle-consul) and [matteobanerjee/finagle-consul](https://github.com/matteobanerjee/finagle-consul)
@@ -83,5 +100,6 @@ val client = Http.client.newService("consul!localhost:8500!/EchoServer")
 #### D-Tab
 
 ```
-Dentry.read("/account=>/$/gov.nih.nlm.ncbi.finagle.serverset/consul/consul.service.aws-prod.consul:80/account-version-2-2-build-73")))
+Dentry.read("/account=>/$/win.wuerping.finagle.serverset/consul/consul.service.aws-prod.consul:80/account-version-2-2-build-73")))
 ```
+

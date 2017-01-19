@@ -1,4 +1,4 @@
-package gov.nih.nlm.ncbi.finagle.consul.catalog
+package win.wuerping.finagle.consul.catalog
 
 import com.twitter.finagle.http.{Method, Request, Response, Status}
 import com.twitter.finagle.{Http, ListeningServer, Service}

@@ -2,21 +2,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.brigade</groupId>
+    <groupId>win.wuerping</groupId>
     <artifactId>finagle-consul-demo</artifactId>
-    <version>0.0.0-SNAPSHOT</version>
+    <version>0.1.1-SNAPSHOT</version>
 
     <properties>
-        <scala.version>2.11.7</scala.version>
+        <scala.version>2.11.8</scala.version>
         <scala.base.version>2.11</scala.base.version>
-        <finagle.version>6.35.0</finagle.version>
+        <finagle.version>6.41.0</finagle.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>com.brigade</groupId>
+            <groupId>win.wuerping</groupId>
             <artifactId>finagle-consul</artifactId>
-            <version>0.0.2-SNAPSHOT</version>
+            <version>0.1.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
@@ -44,7 +44,7 @@
             <plugin>
                 <groupId>net.alchim31.maven</groupId>
                 <artifactId>scala-maven-plugin</artifactId>
-                <version>3.2.0</version>
+                <version>3.2.2</version>
                 <configuration>
                     <scalaCompatVersion>${scala.base.version}</scalaCompatVersion>
                     <recompileMode>incremental</recompileMode>

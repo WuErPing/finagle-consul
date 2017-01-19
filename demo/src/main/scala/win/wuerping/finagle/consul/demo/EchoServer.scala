@@ -1,4 +1,4 @@
-package gov.nih.nlm.ncbi.finagle.consul.demo
+package win.wuerping.finagle.consul.demo
 
 import com.twitter.finagle.http.{Request, Response, Status}
 import com.twitter.finagle.{Http, Service}
@@ -19,7 +19,7 @@ object EchoServer {
       }
     }
 
-    val server = Http.server.serveAndAnnounce("consul!localhost:8500!/EchoServer?ttl=5", s":$serverPort", service)
+    val server = Http.server.serveAndAnnounce("consul!localhost:8500!/EchoServer?ttl=120", s":$serverPort", service)
     sys.addShutdownHook {
       Await.result(server.close())
     }

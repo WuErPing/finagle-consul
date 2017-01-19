@@ -1,4 +1,4 @@
-package gov.nih.nlm.ncbi.finagle.consul
+package win.wuerping.finagle.consul
 
 import com.twitter.util.Duration
 import org.jboss.netty.handler.codec.http.QueryStringDecoder

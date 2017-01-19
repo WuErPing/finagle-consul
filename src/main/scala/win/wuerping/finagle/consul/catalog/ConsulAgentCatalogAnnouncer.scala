@@ -1,4 +1,4 @@
-package gov.nih.nlm.ncbi.finagle.consul.catalog
+package win.wuerping.finagle.consul.catalog
 
 import java.net.InetSocketAddress
 import java.util.concurrent.TimeUnit
@@ -7,7 +7,8 @@ import com.twitter.finagle.util.DefaultTimer
 import com.twitter.finagle.{Announcement, Announcer}
 import com.twitter.logging.Logger
 import com.twitter.util.{Await, Duration, Future, FutureCancelledException}
-import gov.nih.nlm.ncbi.finagle.consul.{ConsulHttpClientFactory, ConsulQuery}
+import win.wuerping.finagle.consul.ConsulQuery
+import win.wuerping.finagle.consul.ConsulHttpClientFactory
 
 /**
  * Note: a consul agent is required for health checks.

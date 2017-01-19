@@ -1,4 +1,4 @@
-package gov.nih.nlm.ncbi.finagle
+package win.wuerping.finagle
 
 import com.twitter.finagle._
 import com.twitter.util.{Activity, Var}
@@ -57,14 +57,14 @@ private[finagle] trait BaseServersetNamer extends Namer {
  * Endpoint names are delimited by the ':' character. For example
  *
  * {{{
- * /$/gov.nih.nlm.ncbi.finagle.consul.serverset/consul/consul.service.consul:8500/my-app:a=b
+ * /$/win.wuerping.finagle.consul.serverset/consul/consul.service.consul:8500/my-app:a=b
  * }}}
  *
  * is the endpoint `http` of serverset `/twitter/service/cuckoo/prod/read` on
  * the ensemble `sdzookeeper.local.twitter.com:2181`.
  */
 class serverset extends BaseServersetNamer {
-  private[this] val idPrefix = Path.Utf8("$", "gov.nih.nlm.ncbi.finagle.consul.serverset")
+  private[this] val idPrefix = Path.Utf8("$", "win.wuerping.finagle.consul.serverset")
 
   protected[this] def bind(path: Path): Option[Name.Bound] = path match {
     case Path.Utf8(strategy, hosts, rest@_*) =>

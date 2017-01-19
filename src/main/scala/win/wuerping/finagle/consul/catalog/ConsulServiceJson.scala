@@ -1,4 +1,4 @@
-package gov.nih.nlm.ncbi.finagle.consul.catalog
+package win.wuerping.finagle.consul.catalog
 
 // Keys match consul's JSON format
 // https://consul.io/docs/agent/services.html

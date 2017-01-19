@@ -1,15 +1,15 @@
-package gov.nih.nlm.ncbi.finagle.consul.catalog
+package win.wuerping.finagle.consul.catalog
 
 import com.twitter.finagle.Service
 import com.twitter.finagle.http.{Method, Request, Response}
 import com.twitter.logging.Logger
 import com.twitter.util.{Duration, Future}
-import gov.nih.nlm.ncbi.finagle.consul.ConsulQuery
 import org.json4s.DefaultFormats
 import org.json4s.jackson.Serialization
 
 import java.net.InetSocketAddress
 import java.util.concurrent.TimeUnit
+import win.wuerping.finagle.consul._
 
 /**
  * A wrapper around Consul agent service registration HTTP calls
